@@ -45,8 +45,8 @@ const BarChart = ({ selectedMonth }) => {
     const fetchBarChart = async () => {
       try {
         const apiUrl = selectedMonth
-          ? `http://localhost:1234/api/barchart/${selectedMonth}`
-          : `http://localhost:1234/api/barchart`;
+          ? `https://backend-0mh3.onrender.com/api/barchart/${selectedMonth}`
+          : `https://backend-0mh3.onrender.com/api/barchart`;
 
         const response = await axios.get(apiUrl);
         const data = response.data;
