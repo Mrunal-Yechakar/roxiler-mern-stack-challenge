@@ -30,8 +30,8 @@ const PieChart = ({ selectedMonth }) => {
     const fetchPieChart = async () => {
       try {
         const apiUrl = selectedMonth
-          ? `http://localhost:1234/api/piechart/${selectedMonth}`
-          : `http://localhost:1234/api/piechart`;
+          ? `https://backend-0mh3.onrender.com/api/piechart/${selectedMonth}`
+          : `https://backend-0mh3.onrender.com/api/piechart`;
 
         const response = await axios.get(apiUrl);
         const data = response.data;
