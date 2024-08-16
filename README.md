@@ -1,1 +1,33 @@
-# roxiler-mern-stack-challenge
+# Roxiler MERN Stack Challenge
+
+## Overview
+
+This repository contains the full-stack application for the Roxiler MERN Stack Challenge. It includes both frontend and backend implementations.
+
+The project is structured as follows:
+
+- **`frontend/`**: Contains the React.js frontend application.
+- **`backend/`**: Contains the Node.js backend server with API endpoints.
+
+## Technologies Used
+
+- **Frontend:** 
+  - **React.js**: A JavaScript library for building user interfaces.
+  
+- **Backend:** 
+  - **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
+  - **Express.js**: A web application framework for Node.js (implied for backend setup).
+  
+- **Database:** 
+  - **MongoDB**: A NoSQL database for storing data.
+
+## Getting Started
+
+### Prerequisites
+
+- **Node.js**: Ensure Node.js is installed on your machine. You can download it from [Node.js official website](https://nodejs.org/).
+
+## Repository Structure
+
+- **`frontend/`**: Contains the frontend React application.
+- **`backend/`**: Contains the backend Node.js server and API endpoints.
