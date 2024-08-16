@@ -21,11 +21,9 @@ The project is structured as follows:
 - **Database:** 
   - **MongoDB**: A NoSQL database for storing data.
 
-## Getting Started
+## Live Demo
 
-### Prerequisites
-
-- **Node.js**: Ensure Node.js is installed on your machine. You can download it from [Node.js official website](https://nodejs.org/).
+####  [Node.js official website](https://nodejs.org/).
 
 ## Repository Structure
 
