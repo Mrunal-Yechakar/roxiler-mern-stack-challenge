@@ -17,7 +17,7 @@ mongoose.connect(url)
   });
 
 app.use(cors({
-  origin:'http://localhost:3000',
+  origin:'https://backend-0mh3.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
 }))
 app.use('/', userroute);
