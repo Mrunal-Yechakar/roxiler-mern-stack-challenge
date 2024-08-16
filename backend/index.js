@@ -17,7 +17,7 @@ mongoose.connect(url)
   });
 
 app.use(cors({
-  origin:'https://backend-0mh3.onrender.com',
+  origin:'https://roxiler-mern-stack-challenge.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
 }))
 app.use('/', userroute);
