@@ -12,7 +12,6 @@ import {
 } from 'chart.js';
 import '../css/barchart.css';
 
-// Register the components with Chart.js
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -77,10 +76,6 @@ const BarChart = ({ selectedMonth }) => {
     fetchBarChart();
   }, [selectedMonth]);
 
-  useEffect(() => {
-    console.log('Updated chartData:', chartData);
-  }, [chartData]);
-
   return (
     <div className='container'>
       <div className="header">
@@ -99,7 +94,6 @@ const BarChart = ({ selectedMonth }) => {
                     display: true,
                     text: 'Number of Items',
                   },
-
                 },
                 x: {
                   type: 'category', 
