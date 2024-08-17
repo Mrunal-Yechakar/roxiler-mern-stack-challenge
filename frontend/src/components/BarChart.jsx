@@ -76,8 +76,12 @@ const BarChart = ({ selectedMonth }) => {
     fetchBarChart();
   }, [selectedMonth]);
 
+  useEffect(() => {
+    console.log('Updated chartData:', chartData);
+  }, [chartData]);
+
   return (
-    <div className='container'>
+    <div className="container">
       <div className="header">
         <h3 className="title">Transactions Bar Chart</h3>
       </div>
@@ -86,17 +90,16 @@ const BarChart = ({ selectedMonth }) => {
           <Bar
             data={chartData}
             options={{
+              maintainAspectRatio: false,
               scales: {
                 y: {
                   beginAtZero: true,
-                  type: 'linear', 
                   title: {
                     display: true,
                     text: 'Number of Items',
                   },
                 },
                 x: {
-                  type: 'category', 
                   title: {
                     display: true,
                     text: 'Price Range',
