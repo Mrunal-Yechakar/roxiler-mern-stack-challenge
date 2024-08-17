@@ -6,7 +6,7 @@
     justify-content: center; 
     margin: 20px 0;
     padding: 10px;
-    width: 60%;
+    width: 100%;
 }
 
 .search-input {
@@ -15,7 +15,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     flex: 1;
-    max-width: 200px; 
+    max-width: 400px; 
     transition: border-color 0.3s ease-in-out; 
 }
 
@@ -48,13 +48,13 @@
     }
 
     .search-input {
-        width: 80%;
+        width: 100%;
         max-width: none; 
         margin-bottom: 10px;
     }
 
     .search-button {
-        width: 80%;
+        width: 100%;
         margin-left: 0;
     }
 }
