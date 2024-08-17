@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../css/statistics.css'; 
+import '../css/statistics.css';
 
 const Statistics = ({ selectedMonth }) => {
   const [statistics, setStatistics] = useState({
@@ -16,11 +16,9 @@ const Statistics = ({ selectedMonth }) => {
           ? `https://backend-0mh3.onrender.com/api/statistics/${selectedMonth}`
           : `https://backend-0mh3.onrender.com/api/statistics`;
 
-        console.log(`Fetching statistics from: ${url}`);
         const response = await axios.get(url);
-        
+
         if (response.data) {
-          console.log('Fetched statistics:', JSON.stringify(response.data, null, 2));
           setStatistics(response.data);
         } else {
           console.warn('No data returned from API');
@@ -32,8 +30,6 @@ const Statistics = ({ selectedMonth }) => {
 
     fetchStatistics();
   }, [selectedMonth]);
-
-  console.log('Rendered statistics:', JSON.stringify(statistics, null, 2));
 
   return (
     <div className="statistics-container">
