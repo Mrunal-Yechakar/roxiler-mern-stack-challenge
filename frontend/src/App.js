@@ -3,10 +3,8 @@ import Dropdown from './components/Dropdown';
 import TransactionsTable from './components/TransactionsTable';
 import SearchBar from './components/SearchBar';
 import Statistics from './components/Statistics';
-import BarChart from './components/BarChart';
 import './css/home.css';
 
-// Lazy load the PieChart component
 const Barchart = lazy(() => import('./components/BarChart'));
 const PieChart = lazy(() => import('./components/Piechart'));
 
@@ -42,7 +40,7 @@ const App = () => {
       <div className="navbar">
         <div className="logo">Dashboard</div>
         <div className="navItems">
-          <SearchBar className="search-bar" setSearchQuery={setSearchQuery} />
+          <SearchBar className="searchBar" setSearchQuery={setSearchQuery} />
           <Dropdown className="dropdown" selectedMonth={selectedMonth} setSelectedMonth={setSelectedMonth} />
         </div>
       </div>
