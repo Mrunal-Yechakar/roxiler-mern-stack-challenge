@@ -55,7 +55,7 @@ const App = () => {
             setPage={setPage}
           />
           <Suspense fallback={<div>Loading Barchart ...</div>}>
-           <BarChart selectedMonth={selectedMonth} />
+           <Barchart selectedMonth={selectedMonth} />
           </Suspense>
           <Suspense fallback={<div>Loading PieChart...</div>}>
             <PieChart selectedMonth={selectedMonth} />
