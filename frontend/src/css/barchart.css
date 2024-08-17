@@ -1,4 +1,4 @@
-/* Container that holds the entire chart section */
+
 .container {
   width: 100%;
   max-width: 1000px; 
@@ -6,59 +6,53 @@
   padding: 20px;
   margin: 0 auto; 
   box-sizing: border-box;
+  overflow-x: auto; 
 }
-
 
 .header {
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-
 .chartContainer {
   width: 100%;
-  max-width: 900px;
+  max-width: 900px; 
   height: 400px; 
   margin: 0 auto; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  padding: 20px; 
+  background-color: #fff; 
+  overflow-x: hidden; 
 }
-
 
 @media (max-width: 768px) {
   .chartContainer {
-    height: 300px;
+    height: 350px; 
   }
 
   .title {
-    font-size: 1.25rem;
+    font-size: 1.25rem; 
   }
 }
-
 
 @media (max-width: 480px) {
   .container {
-    padding: 10px; 
+    padding: 10px;
   }
 
   .chartContainer {
-    height: 250px;
+    height: 300px; 
+    overflow-x: auto; 
   }
 
   .title {
-    font-size: 1.1rem;
+    font-size: 1.1rem; 
   }
 }
-
 
 .title {
   font-size: 1.75rem;
   color: #007bff;
   font-weight: 600; 
-}
-
-
-.chartContainer {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 20px; 
-  background-color: #fff; 
 }
